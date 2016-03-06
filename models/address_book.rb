@@ -1,6 +1,4 @@
 require_relative 'entry'
-
-require_relative 'entry'
 require "csv"
 
 
@@ -8,6 +6,10 @@ class AddressBook
     attr_reader :entries
 
     def initialize
+        @entries = []
+    end
+
+    def nuke_entry
         @entries = []
     end
 
